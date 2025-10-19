@@ -23,8 +23,8 @@ This is a improved and modernized fork of [bgrins/javascript-astar](https://gith
     import { AStar, Graph } from "javascript-astarf"
     
     // Create a new graph with a grid
-    // - Take note 0 = wall, 1 = walkable, higher than 1 makes it worse
-    // - Take note the lower left 0-value is x=1, y=0. Like you would access a 2d array[x][y].
+    // - Take note 0 = wall, 1 = walkable, higher than 1 to increase path cost
+    // - Take note the lower left 0-value is x=1, y=0. Like you would access a 2d array[x][y]. Not to be confused with cartesian coordinates.
     const graph = new Graph([
         [1, 1],
         [0, 1],
@@ -40,16 +40,16 @@ This is a improved and modernized fork of [bgrins/javascript-astar](https://gith
 
 **Examples**
 
-Se the [astar-examples.test.js](./test/astar-examples.test.js) file for further examples on how to use this library
+* Se the [astar-examples.test.js](./test/astar-examples.test.js) file for further examples on how to use this library
 
 
 **Weights**
 
-Se the [astar-examples.test.js](./test/astar-examples.test.js) file for example
-
+* Se the [astar-examples.test.js](./test/astar-examples.test.js) file for example
 * A weight of 0 denotes a wall.
 * A weight cannot be negative.
 * A weight cannot be between 0 and 1 (exclusive).
+* A weight higher than 1 increases the cost of moving through that node.
 * A weight can contain decimal values (greater than 1).
 
 
