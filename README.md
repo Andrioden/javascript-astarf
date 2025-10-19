@@ -23,8 +23,8 @@ This is a improved and modernized fork of [bgrins/javascript-astar](https://gith
     import { AStar, Graph } from "javascript-astarf"
     
     // Create a new graph with a grid
-    // - Take note 0 = wall, 1 = walkable, higher than 1 to increase path cost
-    // - Take note the lower left 0-value is x=1, y=0. Like you would access a 2d array[x][y]. Not to be confused with cartesian coordinates.
+    // - 0 = wall, 1 = walkable, >1 to increase path cost
+    // - Lower left 0-value is x=1, y=0. Like accessing a 2d array[x][y]. Not cartesian coordinates.
     const graph = new Graph([
         [1, 1],
         [0, 1],
