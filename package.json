@@ -1,6 +1,6 @@
 {
   "name": "javascript-astarf",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "AStar pathfinding search algorithm written in JavaScript, forked from bgrins/javascript-astar",
   "type": "module",
   "repository": {
